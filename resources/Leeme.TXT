@@ -1,0 +1,14 @@
+==================
+RENTAS V 0.0.0 Alfa
+==================
+
+- Debe de tener instalada la maquina virtual de java o el JDK correspondiente para correr el sistema, si no lo tiene descargue desde https://www.java.com
+- El sistema crea su propia base de datos si no es posible ejecute como adminsitrador u otorge los privilegios necesarios 
+- Desde linea de comandos ejecute la siguiente instrucción con la ruta del archivo java -jar Rentas.jar 
+- Puede solicitar soporte de forma remota o por email, esto tiene costo adicional.
+
+* El sistema se entrega como shareware, no tiene bloqueos ni restricciones, de igual manera no hay ninguna garantia
+  explicita del mismo.
+
+Mario Garcia - Buho Computacion.
+Derechos Reservados 2024

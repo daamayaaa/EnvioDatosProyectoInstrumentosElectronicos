@@ -1,0 +1,13 @@
+com.damaya.monitoreo.rs232.cliente
+com.damaya.monitoreo.rs232.cliente.envio
+com.damaya.monitoreo.rs232.cliente.recepcion
+com.damaya.monitoreo.rs232.config
+com.damaya.monitoreo.rs232.constantes
+com.damaya.monitoreo.rs232.dto
+com.damaya.monitoreo.rs232.excepciones
+com.damaya.monitoreo.rs232.flujomasico
+com.damaya.monitoreo.rs232.hyt
+com.damaya.monitoreo.rs232.interfaces
+com.damaya.monitoreo.rs232.mapeo
+com.damaya.monitoreo.rs232.peso
+com.damaya.monitoreo.rs232.utils

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<project name="EnvioDatosProyectoInstrumentosElectronicos" default="dist" basedir=".">
+	<description>
+		Envío de Datos Simulados hacial el Sistema de Monitoreo Visual de Instrumentos Electronicos
+	</description>
+	<!-- creo propiedades -->
+	<property name="version" value="1.0" />
+	<property name="src" location="src" />
+	<property name="lib" location="lib" />
+	<property name="build" location="build" />
+	<property name="doc" location="doc" />
+	<property name="dist" location="dist" />
+
+	<path id="path.libs">
+		<pathelement location="." />
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean" description="clean up">
+		<echo> ************ SE LIMPIA EL PROYECYO ***************** </echo>
+		<delete dir="${build}" />
+	</target>
+
+	<target name="init" depends="clean">
+		<echo> ************ EJECUTANDO INIT ***************** </echo>
+		<tstamp />
+		<mkdir dir="${build}" />
+		<copy todir="${build}">
+			<fileset dir="${src}">
+				<include name="**/*" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<mkdir dir="${doc}"/>
+	</target>
+
+	<target name="compile" depends="init" description="Compila el codigo del proyecto.">
+		<echo> ************ COMPILANDO PROYECTO JAVA ***************** </echo>
+		<echo> [INFO] Compilando el programa con todas las dependencias. </echo>
+		<javac includeantruntime="false" srcdir="${src}" destdir="${build}" source="1.8" failonerror="true" verbose="false" debug="true" fork="true" deprecation="off" optimize="true" memoryinitialsize="512m" memorymaximumsize="1024m">
+			<compilerarg line="-J-Xms512m -J-Xmx1024m" />
+			<compilerarg value="-Xlint:deprecation" />
+			<compilerarg value="-Xlint:unchecked" />
+			<classpath refid="path.libs" />
+		</javac>
+	</target>
+
+	<target name="dist" depends="compile" description="Genera el entregable del proyecto.">
+		<echo> ************ COMPILANDO JAR ***************** </echo>
+		<echo> [INFO] Generando el JAR del proyecto. </echo>
+		<jar jarfile="dist/EnvioDatosProyectoInstrumentosElectronicos.jar" basedir="${build}" update="yes" compress="true">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Main-Class" value="com.damaya.monitoreo.rs232.cliente.ClienteEnvioDatosRS232" />
+				<attribute name="Class-Path" value="." />
+			</manifest>
+			<zipfileset src="lib/commons-io-2.4.jar" excludes="META-INF/*" />
+			<zipfileset src="lib/commons-lang-2.1.jar" excludes="META-INF/*" />
+			<zipfileset src="lib/commons-math-2.0.jar" excludes="META-INF/*" />
+			<zipfileset src="lib/log4j.jar" excludes="META-INF/*" />
+			<zipfileset src="lib/RXTXcomm.jar" excludes="META-INF/*" />
+		</jar>
+	</target>
+
+	<target name="doc" depends="compile" description="generate documentation">
+		<echo> ************ GENERANDO JAVADOC ***************** </echo>
+		<echo> [INFO] Generando el Javadoc del proyecto. </echo>
+		<javadoc packagenames="src" sourcepath="${src}" destdir="${doc}">
+			<fileset dir="${src}">
+				<include name="**" />
+			</fileset>
+		</javadoc>
+	</target>
+
+</project>

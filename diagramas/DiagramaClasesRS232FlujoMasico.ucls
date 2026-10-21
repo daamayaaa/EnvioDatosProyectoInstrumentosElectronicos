@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="co.edu.unal.fing.diee.monitoreo.rs232.flujomasico.EnvioDatosRS232InstrumentoFlujo" 
+    project="EnvioDatosProyectoInstrumentosElectronicos" 
+    file="/EnvioDatosProyectoInstrumentosElectronicos/src/co/edu/unal/fing/diee/monitoreo/rs232/flujomasico/EnvioDatosRS232InstrumentoFlujo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="219" y="602"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" 
+    name="co.edu.unal.fing.diee.monitoreo.rs232.flujomasico.RecepcionDatosRS232InstrumentoFlujo" 
+    project="EnvioDatosProyectoInstrumentosElectronicos" 
+    file="/EnvioDatosProyectoInstrumentosElectronicos/src/co/edu/unal/fing/diee/monitoreo/rs232/flujomasico/RecepcionDatosRS232InstrumentoFlujo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1236" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="co.edu.unal.fing.diee.monitoreo.rs232.dto.EW32907DTO" 
+    project="EnvioDatosProyectoInstrumentosElectronicos" 
+    file="/EnvioDatosProyectoInstrumentosElectronicos/src/co/edu/unal/fing/diee/monitoreo/rs232/dto/EW32907DTO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="459" width="284" x="79" y="-181"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="4">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

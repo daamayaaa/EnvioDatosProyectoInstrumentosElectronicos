@@ -1,0 +1,9 @@
+# ############################################################################ #
+# Registro de cambios y modificaciones                                         #
+# Sistema de rentas                                                            #
+# Autor: Mario García - Búho Computación mariogarcia1040@gmail.com             #
+# 09-Enero-2024 - León, GTO. México.                                           #
+# ############################################################################ #
+
+# 09/Enero/2024 v. 0.0.0 Alfa
+- Versión inicial liberada fase alfa

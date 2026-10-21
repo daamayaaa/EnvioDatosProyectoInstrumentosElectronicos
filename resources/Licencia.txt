@@ -1,0 +1,20 @@
+Gracias por instalar el sistema Rentas 0.0.0 Alfa
+
+Este sistema es distribuido bajo licencia Shareware por lo que se puede instalar y distribuir de forma libre
+Se entrega sin nunguna garantia explicita de uso o resultados, al realizar la instalacion usted acepta estos
+terminos y los posteriores.
+
+Cualquier soporte adicional o ayuda puede ser realizada de forma remota, por email , telefono u otros medios
+disponibles, esto puede generar cargos adicionales no especificados dentro de este texto.
+
+La versiones posteriores y actualizaciones no son obligacion ni reponsabilidad del autor y seran entregadas
+de forma voluntaria por el mismo.
+
+La informacion capturada dentro del sistema es unica responsabilidad del usuario por lo que la perdida o dano
+de la misma los costos de timbrado y facturacion electronica son pagados a manera de timbres que deberan de 
+ser cubiertos por el usuario final para este fin.
+
+Mario Garcia - Buho Computacion
+Copyright© 2024 Los autores de Rentas. Todos los derechos reservados.
+
+* No se incluyen acentos u otros caracteres especiales para mostrar de forma correcta el texto.
